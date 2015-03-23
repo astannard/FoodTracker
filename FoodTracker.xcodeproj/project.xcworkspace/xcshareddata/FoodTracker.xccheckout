@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>D851994E-24AB-4F62-8F6A-89D440BC774D</string>
+	<key>IDESourceControlProjectName</key>
+	<string>FoodTracker</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>2A35F69D9901F6E5AE0E612511D7FADA7665863A</key>
+		<string>https://github.com/astannard/FoodTracker.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>FoodTracker.xcodeproj</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>2A35F69D9901F6E5AE0E612511D7FADA7665863A</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/astannard/FoodTracker.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>111</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>2A35F69D9901F6E5AE0E612511D7FADA7665863A</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>2A35F69D9901F6E5AE0E612511D7FADA7665863A</string>
+			<key>IDESourceControlWCCName</key>
+			<string>FoodTracker</string>
+		</dict>
+	</array>
+</dict>
+</plist>
