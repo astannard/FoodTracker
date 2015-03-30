@@ -15,7 +15,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     var searchController : UISearchController!
     var suggestedSearchFoods : [String] = []
     var filteredSuggestedSearchFoods:[String] = []
-    
+    var scopeButtonTitles = ["Reconmmended","Search Results","Saved"]
     
     
     override func viewDidLoad() {
@@ -26,6 +26,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.searchController.searchResultsUpdater = self
         self.searchController.dimsBackgroundDuringPresentation = false
         self.searchController.hidesNavigationBarDuringPresentation = false
+        
+        self.searchController.searchBar.scopeButtonTitles = scopeButtonTitles
         
         self.searchController.searchBar.frame = CGRectMake(searchController.searchBar.frame.origin.x, searchController.searchBar.frame.origin.y, searchController.searchBar.frame.size.width, 44.0)
         
@@ -71,7 +73,28 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     //UISearchResultsUpdatingDelegate
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-        
+        let searchString = self.searchController.searchBar.text
+        let selectedScopeButtonIndex = self.searchController.searchBar.selectedScopeButtonIndex
+        self.filterContentForSearch(searchString, scope: selectedScopeButtonIndex)
+        self.tableView.reloadData()
+    }
+    
+    
+//    func updateSearchResultsForSearchController(searchController: UISearchController) {
+//        
+//        let searchString = searchController.searchBar.text!
+//        let selectedIndex = searchController.searchBar.selectedScopeButtonIndex
+//        
+//        filteredSuggestedSearchFoods(searchString, scope: selectedIndex)
+//        self.tableView.reloadData()
+//    }
+    
+    
+    func filterContentForSearch(searchText: String, scope: Int){
+        self.filteredSuggestedSearchFoods = self.suggestedSearchFoods.filter({ (food: String) -> Bool in
+            var foodMatch = food.rangeOfString(searchText)
+            return foodMatch != nil
+        })
     }
 }
 
