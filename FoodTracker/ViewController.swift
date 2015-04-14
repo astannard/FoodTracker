@@ -12,6 +12,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
 
     @IBOutlet weak var tableView: UITableView!
     
+    let kAppId = "138c4283"
+    let kAppKey = "c80d39db97736b2602929ef5f881fc60"
     var searchController : UISearchController!
     var suggestedSearchFoods : [String] = []
     var filteredSuggestedSearchFoods:[String] = []
@@ -79,15 +81,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         self.tableView.reloadData()
     }
     
+    //Mark - searchbar delegate
+    func searchBarSearchButtonClicked(searchBar: UISearchBar) {
+        makeRequest(searchBar.text)
+    }
     
-//    func updateSearchResultsForSearchController(searchController: UISearchController) {
-//        
-//        let searchString = searchController.searchBar.text!
-//        let selectedIndex = searchController.searchBar.selectedScopeButtonIndex
-//        
-//        filteredSuggestedSearchFoods(searchString, scope: selectedIndex)
-//        self.tableView.reloadData()
-//    }
     
     
     func filterContentForSearch(searchText: String, scope: Int){
@@ -95,6 +93,41 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             var foodMatch = food.rangeOfString(searchText)
             return foodMatch != nil
         })
+    }
+    
+    func makeRequest(searchString: String){
+//        let url = NSURL(string: "https://api.nutritionix.com/v1_1/search/\(searchString)?fields=item_name%2Citem_id%2Cbrand_name%2Cnf_calories%2Cnf_total_fat&appId=\(kAppId)&appKey=\(kAppKey)")
+//        
+//        let task = NSURLSession.sharedSession().dataTaskWithURL(url!, completionHandler: { (data, response, error) -> Void in
+//            
+//            var datastring = NSString(data: data, encoding: NSUTF8StringEncoding)
+//            
+//            println(datastring)
+//            println(response)
+//        })
+ 
+//        task.resume()
+    
+    
+        var request = NSMutableURLRequest(URL: NSURL(string: "https://api.nutritionix.com/v1_1/search/")!)
+        let session = NSURLSession.sharedSession()
+        request.HTTPMethod = "POST"
+        var params = [
+            "appId" : kAppId,
+            "appKey" : kAppKey,
+            "fields" : ["item_name", "brand_name", "keywords", "usda_fields"],
+            "limit"  : "50",
+            "query"  : searchString,
+            "filters": ["exists":["usda_fields": true]]
+        ]
+        
+        var error: NSError?
+        request.HTTPBody = NSJSONSerialization.dataWithJSONObject(params, options: nil, error: &error)
+        
+        request.addValue("application/json", forHTTPHeaderField: "Content-Type")
+        request.addValue("application/json", forHTTPHeaderField: "Accept")
+        
+    
     }
 }
 
