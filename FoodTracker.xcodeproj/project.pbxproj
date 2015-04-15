@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		A125588E1AC3F7A200C4A4F2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125588D1AC3F7A200C4A4F2 /* DetailViewController.swift */; };
+		A12558901ADE4EBC00C4A4F2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125588F1ADE4EBC00C4A4F2 /* DataController.swift */; };
 		A1C60D021AC00A02001DD511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C60D011AC00A02001DD511 /* AppDelegate.swift */; };
 		A1C60D051AC00A02001DD511 /* FoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1C60D031AC00A02001DD511 /* FoodTracker.xcdatamodeld */; };
 		A1C60D071AC00A02001DD511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C60D061AC00A02001DD511 /* ViewController.swift */; };
@@ -29,6 +30,7 @@
 
 /* Begin PBXFileReference section */
 		A125588D1AC3F7A200C4A4F2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		A125588F1ADE4EBC00C4A4F2 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
 		A1C60CFC1AC00A02001DD511 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C60D001AC00A02001DD511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C60D011AC00A02001DD511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -83,6 +85,7 @@
 			children = (
 				A1C60D081AC00A02001DD511 /* Main.storyboard */,
 				A1C60D061AC00A02001DD511 /* ViewController.swift */,
+				A125588F1ADE4EBC00C4A4F2 /* DataController.swift */,
 				A125588D1AC3F7A200C4A4F2 /* DetailViewController.swift */,
 				A1C60D011AC00A02001DD511 /* AppDelegate.swift */,
 				A1C60CFF1AC00A02001DD511 /* Supporting Files */,
@@ -218,6 +221,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A12558901ADE4EBC00C4A4F2 /* DataController.swift in Sources */,
 				A1C60D071AC00A02001DD511 /* ViewController.swift in Sources */,
 				A1C60D051AC00A02001DD511 /* FoodTracker.xcdatamodeld in Sources */,
 				A1C60D021AC00A02001DD511 /* AppDelegate.swift in Sources */,
