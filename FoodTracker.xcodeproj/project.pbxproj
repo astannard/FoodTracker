@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		A125588E1AC3F7A200C4A4F2 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125588D1AC3F7A200C4A4F2 /* DetailViewController.swift */; };
 		A12558901ADE4EBC00C4A4F2 /* DataController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A125588F1ADE4EBC00C4A4F2 /* DataController.swift */; };
+		A12558941AE8D35800C4A4F2 /* USDItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A12558931AE8D35800C4A4F2 /* USDItem.swift */; };
 		A1C60D021AC00A02001DD511 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C60D011AC00A02001DD511 /* AppDelegate.swift */; };
 		A1C60D051AC00A02001DD511 /* FoodTracker.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1C60D031AC00A02001DD511 /* FoodTracker.xcdatamodeld */; };
 		A1C60D071AC00A02001DD511 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1C60D061AC00A02001DD511 /* ViewController.swift */; };
@@ -31,6 +32,7 @@
 /* Begin PBXFileReference section */
 		A125588D1AC3F7A200C4A4F2 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		A125588F1ADE4EBC00C4A4F2 /* DataController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataController.swift; sourceTree = "<group>"; };
+		A12558931AE8D35800C4A4F2 /* USDItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = USDItem.swift; sourceTree = "<group>"; };
 		A1C60CFC1AC00A02001DD511 /* FoodTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FoodTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1C60D001AC00A02001DD511 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A1C60D011AC00A02001DD511 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -97,6 +99,7 @@
 			isa = PBXGroup;
 			children = (
 				A1C60D031AC00A02001DD511 /* FoodTracker.xcdatamodeld */,
+				A12558931AE8D35800C4A4F2 /* USDItem.swift */,
 				A1C60D0D1AC00A02001DD511 /* LaunchScreen.xib */,
 				A1C60D0B1AC00A02001DD511 /* Images.xcassets */,
 				A1C60D001AC00A02001DD511 /* Info.plist */,
@@ -224,6 +227,7 @@
 				A12558901ADE4EBC00C4A4F2 /* DataController.swift in Sources */,
 				A1C60D071AC00A02001DD511 /* ViewController.swift in Sources */,
 				A1C60D051AC00A02001DD511 /* FoodTracker.xcdatamodeld in Sources */,
+				A12558941AE8D35800C4A4F2 /* USDItem.swift in Sources */,
 				A1C60D021AC00A02001DD511 /* AppDelegate.swift in Sources */,
 				A125588E1AC3F7A200C4A4F2 /* DetailViewController.swift in Sources */,
 			);
