@@ -78,8 +78,8 @@ class DataController{
                             }
                             
                             // USDA fields
-                            if itemDictionary["usda_fields"] != nil {
-                                let usdaFieldsDictionary = itemDictionary["usdafields"] as NSDictionary
+                            if fieldDictionary["usda_fields"] != nil {
+                                let usdaFieldsDictionary = fieldDictionary["usda_fields"]! as NSDictionary
                                 
                                 if usdaFieldsDictionary["CA"] != nil {
                                     
